@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		953B1B452B99ADDA002786E9 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 953B1B442B99ADD9002786E9 /* Lato-Regular.ttf */; };
-		953B1B472B99ADE2002786E9 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 953B1B462B99ADE2002786E9 /* Lato-Bold.ttf */; };
-		953B1B492B99ADED002786E9 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 953B1B482B99ADED002786E9 /* Roboto-Regular.ttf */; };
-		953B1B4B2B99ADF5002786E9 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 953B1B4A2B99ADF4002786E9 /* Roboto-Bold.ttf */; };
 		953B1B4F2B99BCEB002786E9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B1B4E2B99BCEB002786E9 /* AppState.swift */; };
 		953B1B522B99D26C002786E9 /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B1B512B99D26C002786E9 /* RewardsView.swift */; };
 		95CF5DE92B991F0200F5AB7E /* BlooApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CF5DE82B991F0200F5AB7E /* BlooApp.swift */; };
@@ -46,10 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		953B1B442B99ADD9002786E9 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../../../../Downloads/Lato,Roboto/Lato/Lato-Regular.ttf"; sourceTree = "<group>"; };
-		953B1B462B99ADE2002786E9 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../../../../Downloads/Lato,Roboto/Lato/Lato-Bold.ttf"; sourceTree = "<group>"; };
-		953B1B482B99ADED002786E9 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../Downloads/Lato,Roboto/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		953B1B4A2B99ADF4002786E9 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../../Downloads/Lato,Roboto/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		953B1B4C2B99AE08002786E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		953B1B4E2B99BCEB002786E9 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		953B1B512B99D26C002786E9 /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
@@ -70,6 +62,10 @@
 		95CF5E1D2B99816000F5AB7E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		95CF5E212B9994CF00F5AB7E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		95CF5E232B999D5500F5AB7E /* MainTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbedView.swift; sourceTree = "<group>"; };
+		C37A96282B99FD17003F6F22 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		C37A96292B99FD17003F6F22 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		C37A962A2B99FD2B003F6F22 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		C37A962B2B99FD2B003F6F22 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +96,10 @@
 		953B1B432B99ADBA002786E9 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				953B1B462B99ADE2002786E9 /* Lato-Bold.ttf */,
-				953B1B4A2B99ADF4002786E9 /* Roboto-Bold.ttf */,
-				953B1B482B99ADED002786E9 /* Roboto-Regular.ttf */,
-				953B1B442B99ADD9002786E9 /* Lato-Regular.ttf */,
+				C37A962A2B99FD2B003F6F22 /* Roboto-Bold.ttf */,
+				C37A962B2B99FD2B003F6F22 /* Roboto-Regular.ttf */,
+				C37A96292B99FD17003F6F22 /* Lato-Bold.ttf */,
+				C37A96282B99FD17003F6F22 /* Lato-Regular.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -247,7 +243,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					95CF5DE42B991F0200F5AB7E = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -290,11 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95CF5DF12B991F0400F5AB7E /* Preview Assets.xcassets in Resources */,
-				953B1B452B99ADDA002786E9 /* Lato-Regular.ttf in Resources */,
-				953B1B4B2B99ADF5002786E9 /* Roboto-Bold.ttf in Resources */,
-				953B1B492B99ADED002786E9 /* Roboto-Regular.ttf in Resources */,
 				95CF5DED2B991F0400F5AB7E /* Assets.xcassets in Resources */,
-				953B1B472B99ADE2002786E9 /* Lato-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +391,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -460,6 +453,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -487,7 +481,9 @@
 				CODE_SIGN_ENTITLEMENTS = Bloo/Bloo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Bloo/Preview Content\"";
+				DEVELOPMENT_TEAM = HMT7XKVJZ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bloo/Info.plist;
@@ -524,7 +520,9 @@
 				CODE_SIGN_ENTITLEMENTS = Bloo/Bloo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Bloo/Preview Content\"";
+				DEVELOPMENT_TEAM = HMT7XKVJZ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bloo/Info.plist;
@@ -560,6 +558,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -582,6 +581,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -603,6 +603,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -624,6 +625,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;

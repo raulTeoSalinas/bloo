@@ -56,9 +56,11 @@ struct MapView: View {
                         Spacer()
                         Image(systemName: "exclamationmark.triangle.fill")
                             .font(.system(size: 25))
+                            .foregroundColor(.white)
                         Text("Reporta una fuga")
                             .font(.system(size: 20))
                             .bold()// Texto del botón
+                            .foregroundColor(.white)
                         Spacer()
                     }
                     .padding(5)
