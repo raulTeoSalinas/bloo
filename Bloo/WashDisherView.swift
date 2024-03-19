@@ -11,7 +11,6 @@ struct WashDisherView: View {
     
     @EnvironmentObject var appState: AppState
 
-
     var body: some View {
         
         ZStack(alignment: .bottom) {
@@ -22,53 +21,53 @@ struct WashDisherView: View {
                 .padding(.top)
             
             HStack {
-                            Spacer()
-                            VStack(alignment: .leading) {
-                                HStack{
-                                    Text("Tiempo:")
-                                    Spacer()
-                                    Text("4:36")
-                                        .bold()
-                                    Image(systemName: "timer.circle.fill")
-                                        .font(.system(size: 30))
-                                        .foregroundColor(Color(red: 0.075, green: 0.329, blue: 0.541))
-                                }.padding(.horizontal)
-                                HStack{
-         
-                                    Text("Trastes Grandes:")
-                                    Spacer()
-                                    Text("4")
-                                        .bold()
+                Spacer()
+                VStack(alignment: .leading) {
+                    HStack{
+                        Text("Tiempo:")
+                        Spacer()
+                        Text("4:36")
+                            .bold()
+                        Image(systemName: "timer.circle.fill")
+                            .font(.system(size: 30))
+                            .foregroundColor(Color(red: 0.075, green: 0.329, blue: 0.541))
+                    }.padding(.horizontal)
+                    HStack{
 
-                                }.padding(.horizontal)
-                                HStack{
+                        Text("Trastes Grandes:")
+                        Spacer()
+                        Text("4")
+                            .bold()
 
-                                    Text("Trastes Chicos:")
-                                    Spacer()
-                                    Text("2")
-                                        .bold()
+                    }.padding(.horizontal)
+                    HStack{
 
-                                }.padding(.horizontal)
-                                HStack{
+                        Text("Trastes Chicos:")
+                        Spacer()
+                        Text("2")
+                            .bold()
 
-                                    Text("Utensilios:")
-                                    Spacer()
-                                    Text("10")
-                                        .bold()
+                    }.padding(.horizontal)
+                    HStack{
 
-                                }.padding(.horizontal)
-                                Image("progressBar")
-                                
-                            }
-                            .padding()
-                            .padding()
-  
-                            Spacer()
-                        }
+                        Text("Utensilios:")
+                        Spacer()
+                        Text("10")
+                            .bold()
+
+                    }.padding(.horizontal)
+                    Image("progressBar")
+                    
+                }
+                .padding()
+                .padding()
+
+                Spacer()
+            }
             .background(Color.white)
-            .cornerRadius(80)
+            .cornerRadius(50)
             .overlay(
-                    RoundedRectangle(cornerRadius: 80)
+                    RoundedRectangle(cornerRadius: 50)
                         .stroke(                            LinearGradient(gradient: Gradient(colors: [
                             Color(red: 0.251, green: 0.851, blue: 0.843),
                             Color(red: 0.216, green: 0.792, blue: 0.933),
@@ -95,8 +94,9 @@ struct WashDisherView: View {
 }
 
 #Preview {
-    var appState = AppState()
+    let appState = AppState()
     return VStack {
         WashDisherView()
     }.environment(appState)
+        .foregroundColor(.white)
 }

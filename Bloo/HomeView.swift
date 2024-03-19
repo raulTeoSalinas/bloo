@@ -84,10 +84,11 @@ struct HomeView: View {
                         VStack{
                             VStack{
                                 HStack{
-                                    Text("Bienvenido, Pedro")
+                                    Spacer()
+                                    Text("¡Bienvenido, Pedro!")
                                         .padding(.top)
                                         .padding(.horizontal)
-                                        .bold()
+                                        .font(.system(size: 14, weight: .heavy))
                                         .font(.custom("Lato-Regular", size: 16))
                                     Spacer()
                                 }
@@ -171,6 +172,7 @@ struct HomeView: View {
                                 .cornerRadius(20)
                             }.padding()
                                 .shadow(radius: 50)
+                                .accentColor(.white)
 
         
                         }
@@ -251,7 +253,7 @@ struct HomeView: View {
                         self.appState.isWashDisherViewActive = false
                     }
         }
-        .navigationBarBackButtonHidden(true)
+        .navigationBarBackButtonHidden(false)
   
 
     }

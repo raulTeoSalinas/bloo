@@ -6,37 +6,81 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct MapView: View {
     var body: some View {
+        
+        
+        let medUnamMap = CLLocationCoordinate2D(
+            latitude: 19.325183824215344,
+            longitude: -99.18928710862387)
+        
+        let fcaUnamMap = CLLocationCoordinate2D(
+            latitude: 19.32427167457403,
+            longitude: -99.18480536550479)
+        
+        let arqUnamMap = CLLocationCoordinate2D(
+            latitude: 19.33098365980434,
+            longitude: -99.187795082356)
+        
+        let cuUnamMap = CLLocationCoordinate2D(
+            latitude: 19.324375428776243,
+            longitude: -99.17367814927857)
+        
+        let presionUnamMap = CLLocationCoordinate2D(
+            latitude: 19.334375428776243,
+            longitude: -99.17367814927857)
+    
+        
         VStack{
             Text("Mapa en Tiempo Real")
+                .font(.system(size: 22))
                 .bold()
+                .fontWeight(.heavy)
                 .foregroundColor(.white)
-            Image("map")
-                .cornerRadius(20)
+
+            
+            HStack{
+                Spacer()
+                Map(){
+                    Marker("FCA UNAM",systemImage: "exclamationmark.circle.fill",  coordinate: fcaUnamMap)
                 
-                .overlay(
-                    RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.white, lineWidth: 4) // Borde con radio de esquina
-                )
+                    Marker("Medicina UNAM",systemImage: "exclamationmark.circle.fill",  coordinate: medUnamMap)
+                
+                    Marker("Arquitectura UNAM",systemImage: "exclamationmark.circle.fill",  coordinate: arqUnamMap)
+                
+                    Marker("Presión baja",systemImage: "exclamationmark.circle.fill",  coordinate: presionUnamMap)
+                
+//                    Marker("Metro CU", coordinate: cuUnamMap)
+              
+                    Marker("Fuga reportada", systemImage: "exclamationmark.circle.fill", coordinate: cuUnamMap)
+                }
+                    .frame(width: .infinity, height: 400)
+                    .cornerRadius(20)
+                    .contentMargins(30)
+                
+                Spacer()
+            }
 
                 Text("¡La zona donde te encuentras tiene reportes de fugas!")
                     .bold()
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center) // Alinea el texto al centro
-                    .frame(maxWidth: .infinity) // Asegura que el texto ocupe todo el ancho disponible
+                    .frame(maxWidth: .infinity) // Asegura que el texto ocupe 
+        
+            
             HStack{
                 Spacer()
-
-                    
                     HStack {
                         Spacer()
                         Image(systemName: "exclamationmark.triangle.fill")
                             .font(.system(size: 25))
+                            .foregroundColor(.white)
                         Text("Reporta presión baja")
                             .font(.system(size: 20))
-                            .bold()// Texto del botón
+                            .bold()
+                            .foregroundColor(.white)// Texto del botón
                         Spacer()
                     }
                     .padding(5)
@@ -50,8 +94,6 @@ struct MapView: View {
             
             HStack{
                 Spacer()
-
-                    
                     HStack {
                         Spacer()
                         Image(systemName: "exclamationmark.triangle.fill")
